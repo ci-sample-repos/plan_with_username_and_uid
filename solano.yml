@@ -1,0 +1,17 @@
+plan:
+- first
+- second
+
+user: john
+uid: 3456
+
+steps:
+  first:
+    script: bin/first
+    output:
+    - fetch_compiled
+
+  second:
+    input:
+    - fetch_compiled
+    script: bin/second

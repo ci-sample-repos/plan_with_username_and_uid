@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+echo '=========    SHOW PWD:'
+pwd
+
+echo '=========    SHOW CURRENT USER:'
+whoami
+
+echo '=========    SHOW CURRENT USER UID:'
+echo $UID
+
+echo '=========    SHOW CURRENT USER GROUPS:'
+groups
+
+echo '=========    SHOW WORKING DIR'
+ls -l .
+
+echo '=========    CREATE fetch_compiled in working dir'
+echo "Some text here for fetch compiled second." > fetch_compiled_second
+
+echo '=========    SHOW WORKING DIR'
+ls -l .
